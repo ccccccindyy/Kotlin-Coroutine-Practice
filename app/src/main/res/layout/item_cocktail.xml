@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.android.example.livedatabuilder.ui.ui.main.CocktailViewHolder" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:contentDescription="@string/the_image_of_this_cocktail" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextAppearance.AppCompat.Headline"
+        tools:text="Some Cocktail"
+        android:id="@+id/name"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextAppearance.AppCompat.Title"
+        tools:text="Margreta"
+        android:id="@+id/category"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextAppearance.AppCompat.Body1"
+        tools:text="Margrita"
+        android:id="@+id/instruction"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/category" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
